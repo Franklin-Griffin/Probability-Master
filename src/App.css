@@ -1,0 +1,77 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.textarea {
+  resize: none;
+  border: 2px solid #ccc;
+  padding: 10px;
+  font-size: 16px;
+  width: 400px;
+  max-width: 100%;
+}
+
+.submit-button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 10px;
+  margin-top: 20px;
+}
+
+.grid-item {
+  border: 2px solid #ccc;
+  padding: 10px;
+  font-size: 16px;
+  text-align: center;
+  width: 15vw;
+}
+
+.key {
+  font-weight: bold;
+}
+
+.value-decimal {
+  margin-top: 5px;
+  font-size: 14px;
+  color: #777;
+}
+
+.value-fraction {
+  margin-top: 5px;
+  font-size: 16px;
+}
+
+.note {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #888;
+}
+
+.warning {
+  font-size: 14px;
+  color: red;
+}
+
+.chart-container {
+  margin-top: 20px;
+  width: 600px;
+  max-width: 100%;
+}
