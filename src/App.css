@@ -3,6 +3,8 @@
   flex-direction: column;
   align-items: center;
   margin-top: 50px;
+  padding: 10px;
+  margin: 0 auto; /* Center the container horizontally */
 }
 
 .textarea {
@@ -10,8 +12,8 @@
   border: 2px solid #ccc;
   padding: 10px;
   font-size: 16px;
-  width: 400px;
-  max-width: 100%;
+  width: 75%;
+  max-width: 800px;
 }
 
 .submit-button {
@@ -31,9 +33,40 @@
 
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(10, 1fr);
   grid-gap: 10px;
   margin-top: 20px;
+  /* Optionally remove max-width to allow container to expand */
+  /* max-width: 800px; */
+  justify-content: center; /* Center the grid items horizontally */
+}
+
+@media screen and (max-width: 1700px) {
+  /* Adjust layout for smaller screens (e.g., mobile devices) */
+  .grid-container {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+@media screen and (max-width: 900px) {
+  /* Adjust layout for smaller screens (e.g., mobile devices) */
+  .grid-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 700px) {
+  /* Adjust layout for smaller screens (e.g., mobile devices) */
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 400px) {
+  /* Adjust layout for smaller screens (e.g., mobile devices) */
+  .grid-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 
 .grid-item {
@@ -41,7 +74,8 @@
   padding: 10px;
   font-size: 16px;
   text-align: center;
-  width: 15vw;
+  /* Remove fixed width to allow flexible sizing */
+  /* width: 200px; */
 }
 
 .key {
@@ -68,10 +102,4 @@
 .warning {
   font-size: 14px;
   color: red;
-}
-
-.chart-container {
-  margin-top: 20px;
-  width: 600px;
-  max-width: 100%;
 }
