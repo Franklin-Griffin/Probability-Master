@@ -1,2 +1,2 @@
 # Probability-Master
-Calculator for all probability related things, especially in board games
+A calculator for the probability distribution and expected outcome of complex dice rolls. WIP
